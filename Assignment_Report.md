@@ -45,17 +45,17 @@ The `DataLoader` class implements `CommandLineRunner` to populate the H2 databas
   List<Book> findAllBooksWithAuthor();
   ```
 - **View**: `book-list.jsp` displays the entities in an HTML table formatted with CSS.
-*(Please insert screenshot of Read Operation here)*
+![Read Operation](read_operation.png)
 
 ### Create Operation
 - **Controller**: `@GetMapping("/books/add")` provides the view `book-form.jsp`. `@PostMapping("/books/add")` saves the `Book` linked to a selected `Author`.
 - **Exception Handling**: Integrity constraint violations (e.g., duplicate ISBN) are caught and handled by redirecting the user back to the form with a descriptive error message using `RedirectAttributes.addFlashAttribute()`.
-*(Please insert screenshot of Create Operation here)*
+![Create Operation](create_operation.png)
 
 ### Update Operation
 - **Controller**: `@GetMapping("/books/edit/{id}")` populates a form with the book details. `@PostMapping("/books/edit/{id}")` processes the submitted edits.
 - **Exception Handling**: Similar to creation, handled smoothly in the controller for uniqueness checks.
-*(Please insert screenshot of Update Operation here)*
+![Update Operation](update_operation.png)
 
 ## 3. Testing
 Comprehensive test suites are written leveraging JUnit and Mockito:
