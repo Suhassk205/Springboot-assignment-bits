@@ -75,4 +75,4 @@ All tests run successfully without any errors.
    - *Solution*: Wrapped service calls inside a try-catch for `DataIntegrityViolationException` in the Controller layer, keeping the application stable.
 
 ## 5. Github URL
-- [Your GitHub Repository URL] (e.g., https://github.com/Suhassk205/Springboot-assignment-bits)
+- [https://github.com/Suhassk205/Springboot-assignment-bits](https://github.com/Suhassk205/Springboot-assignment-bits)
